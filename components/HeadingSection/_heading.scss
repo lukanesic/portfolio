@@ -1,0 +1,23 @@
+.heading-section {
+  // desktop
+  // padding: 20rem 0 10rem;
+
+  // ovde je isto za gore i dole zato sto je oduzeta 100vh od projekta
+  padding: 10rem 0 10rem;
+  color: #1c1d1f;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    color: rgba(29, 30, 32, 0.7);
+    font-weight: 200;
+    line-height: 25px;
+    // desktop
+    // width: 600px;
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+}

@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: -1px;
+}
+
+.hero-test {
+  height: 80vh;
+  background-color: #282828;
+}
+
+.footer-test {
+  height: 80vh;
+  background-color: #2a1737;
+}
+
+.projects-container {
+  position: relative;
+}
+.projects-container .fixed-window {
+  width: 504px;
+  position: absolute;
+  top: 0rem;
+  right: 10.4rem;
+  bottom: 0rem;
+}
+.projects-container .fixed-window .sticky-window {
+  width: 100%;
+  z-index: 10000;
+  position: sticky;
+  top: 0vh;
+  height: 100vh;
+  bottom: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects-container .fixed-window .sticky-window .block {
+  height: 5vh;
+  background-color: #fff;
+}
+
+.wrapper {
+  padding: 0rem 1rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scroll-test-lg {
+  border: 1px solid red;
+  height: 100vh;
+  width: 600px;
+  margin: 0rem auto;
+  overflow-y: scroll;
+}
+.scroll-test-lg .scroll-test-sm {
+  border: 1px solid blue;
+  height: 150vh;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.scroll-test-lg .scroll-test-sm div {
+  width: 90%;
+  height: 150px;
+  border: 1px solid black;
+  margin: 2rem auto;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  height: 5px;
+  transform-origin: 0%;
+}
+
+.parallax-test {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid blue;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.parallax-test .project-test {
+  height: 80vh;
+  border: 1px solid red;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.parallax-test h1 {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section div {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  position: relative;
+}
+.section div .v-line {
+  height: 1px;
+  width: 1px;
+  background-color: red;
+  border: none;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  transform-origin: 0%;
+}
+
+.parallax-container {
+  border: 1px solid red;
+  height: 1800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.parallax-container .box {
+  border: 1px solid red;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.landing-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #19191a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.landing-section nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 100;
+}
+.landing-section nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-section nav .nav-left h1 {
+  font-size: 20px;
+}
+.landing-section nav .nav-left h1 span {
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 1rem;
+  font-size: 16px;
+}
+.landing-section nav .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-section nav .nav-right span {
+  margin-right: 0.5rem;
+  font-size: 18px;
+  display: none;
+}
+.landing-section .mid-section .heading-animation-test {
+  width: 100%;
+  max-width: 300px;
+}
+.landing-section .mid-section h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 69px;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.landing-section .mid-section .heading {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 89px;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.landing-section .mid-section .subheading {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+}
+.landing-section .bot-section {
+  padding-bottom: 3rem;
+}
+.landing-section .bot-section .tech {
+  margin-bottom: 2rem;
+}
+.landing-section .bot-section .tech p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 24px;
+  font-weight: 300;
+}
+.landing-section .bot-section .socials {
+  display: flex;
+  align-items: center;
+}
+.landing-section .bot-section .socials span {
+  margin-right: 1.5rem;
+}
+
+.heading-section {
+  padding: 10rem 0 10rem;
+  color: #1c1d1f;
+}
+.heading-section h2 {
+  font-size: 40px;
+}
+.heading-section p {
+  font-size: 18px;
+  color: rgba(29, 30, 32, 0.7);
+  font-weight: 200;
+  line-height: 25px;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+.project .img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 2rem;
+}
+.project .info {
+  width: 100%;
+}
+.project .info h4 {
+  color: rgba(28, 29, 31, 0.897);
+  font-size: 16px;
+  font-weight: 300;
+}
+.project .info h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1c1d1f;
+  margin: 1rem 0;
+}
+.project .info h6 {
+  font-size: 16px;
+  font-weight: 100;
+  color: #1c1d1f;
+}
+
+.project-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-direction: column;
+}
+
+footer {
+  height: 700px;
+  width: 100%;
+  background-color: #19191a;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+footer h1 {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 2rem 0;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+footer p {
+  font-size: 18px;
+  margin-top: 2rem;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
+}
+footer .socials span {
+  margin-right: 1.5rem;
+}
+footer .credits {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .credits h4 {
+  font-size: 1rem;
+  font-weight: 200;
+}/*# sourceMappingURL=global.css.map */
