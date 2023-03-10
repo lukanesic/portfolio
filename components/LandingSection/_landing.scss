@@ -9,9 +9,25 @@
   flex-direction: column;
   align-items: flex-start;
 
+  @include Pads() {
+    height: 700px;
+  }
+
+  @include PadsPro() {
+    height: 1000px;
+  }
+
+  @include Laptops() {
+    height: 100vh;
+  }
+
+  @include HiDPI() {
+    height: 100vh;
+  }
+
   nav {
     position: absolute;
-    top: 0;
+    top: 1rem;
     left: 50%;
     transform: translate(-50%, 0);
     width: 100%;
@@ -51,12 +67,32 @@
     }
   }
 
+  .emptydiv {
+    height: 100px;
+  }
+
   .mid-section {
     .heading-animation-test {
       // za desktop
       // width: 800px;
       width: 100%;
       max-width: 300px;
+
+      @include Pads() {
+        max-width: 800px;
+      }
+
+      @include PadsPro() {
+        max-width: 800px;
+      }
+
+      @include Laptops() {
+        max-width: 800px;
+      }
+
+      @include HiDPI() {
+        max-width: 800px;
+      }
     }
 
     h1 {
@@ -64,8 +100,23 @@
       font-weight: 700;
       line-height: 69px;
       margin-bottom: 0.5rem;
-
       color: #fff;
+
+      @include Pads() {
+        font-size: 80px;
+      }
+
+      @include PadsPro() {
+        font-size: 80px;
+      }
+
+      @include Laptops() {
+        font-size: 80px;
+      }
+
+      @include HiDPI() {
+        font-size: 80px;
+      }
     }
     .heading {
       font-size: 90px;

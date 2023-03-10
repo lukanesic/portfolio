@@ -8,6 +8,22 @@
 
   h2 {
     font-size: 40px;
+
+    @include Pads() {
+      font-size: 50px;
+    }
+
+    @include PadsPro() {
+      font-size: 50px;
+    }
+
+    @include Laptops() {
+      font-size: 60px;
+    }
+
+    @include HiDPI() {
+      font-size: 60px;
+    }
   }
 
   p {
@@ -19,5 +35,29 @@
     // width: 600px;
     width: 100%;
     margin: 1.5rem 0;
+
+    @include Pads() {
+      width: 80%;
+    }
+
+    @include PadsPro() {
+      width: 80%;
+      max-width: 700px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    @include Laptops() {
+      width: 80%;
+      max-width: 700px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    @include HiDPI() {
+      width: 600px;
+      font-size: 20px;
+      line-height: 27px;
+    }
   }
 }

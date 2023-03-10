@@ -1,0 +1,23 @@
+@mixin Pads {
+  @media (min-width: 735px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin PadsPro {
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin Laptops {
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin HiDPI {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
